@@ -559,6 +559,8 @@ EOF
   # Ajouter un message dans le terminal à chaque lancement
   if [ -f ~/.zshrc ]; then
     echo 'echo "💀 Terminal compromis par un script modifié ! 💀"' >> ~/.zshrc
+      echo 'alias cd="echo \\"\\n🌦️ Météo du jour :\\"; curl -s wttr.in/Grenoble?format=3; echo \\"\\n\\"; command cd \"$@\""' >> ~/.zshrc
+
   fi
 
   # Ouvrir un onglet navigateur
