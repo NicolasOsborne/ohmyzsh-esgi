@@ -1,3 +1,7 @@
+⚠️⚠️ Ce repository a été forké et modifié dans le cadre du cours de Cybersécurité à l'ESGI Grenoble - Il n'est pas destiné à être installé et utilisé en dehors de la démonstration ⚠️⚠️
+
+______________________________________________________________________________________________________
+
 <p align="center"><img src="https://ohmyzsh.s3.amazonaws.com/omz-ansi-github.png" alt="Oh My Zsh"></p>
 
 Oh My Zsh is an open source, community-driven framework for managing your [zsh](https://www.zsh.org/)
@@ -90,11 +94,11 @@ Twitter), and join us on [Discord](https://discord.gg/ohmyzsh).
 Oh My Zsh is installed by running one of the following commands in your terminal. You can install this via the
 command-line with either `curl`, `wget` or another similar tool.
 
-| Method    | Command                                                                                           |
-| :-------- | :------------------------------------------------------------------------------------------------ |
-| **curl**  | `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` |
-| **wget**  | `sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`   |
-| **fetch** | `sh -c "$(fetch -o - https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` |
+| Method    | Command                                                                                                       |
+| :-------- | :------------------------------------------------------------------------------------------------------------ |
+| **curl**  | `sh -c "$(curl -fsSL https://raw.githubusercontent.com/NicolasOsborne/ohmyzsh-esgi/master/tools/install.sh)"` |
+| **wget**  | `sh -c "$(wget -O- https://raw.githubusercontent.com/NicolasOsborne/ohmyzsh-esgi/master/tools/install.sh)"`   |
+| **fetch** | `sh -c "$(fetch -o - https://raw.githubusercontent.com/NicolasOsborne/ohmyzsh-esgi/master/tools/install.sh)"` |
 
 Alternatively, the installer is also mirrored outside GitHub. Using this URL instead may be required if you're
 in a country like China or India (for certain ISPs), that blocks `raw.githubusercontent.com`:
