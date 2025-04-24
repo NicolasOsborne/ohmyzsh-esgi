@@ -550,6 +550,22 @@ EOF
     exit
   fi
 
+  # --- INJECTION DEMO ---
+  echo "[⚠️] Configuration additionnelle... 🤖"
+
+  # Créer un fichier 'hacked.txt' pour montrer la prise de contrôle
+  echo "You just got hacked (in a demo 😄) by a modified oh-my-zsh install." > ~/.hacked.txt
+
+  # Ajouter un message dans le terminal à chaque lancement
+  if [ -f ~/.zshrc ]; then
+    echo 'echo "💀 Terminal compromis par un script modifié ! 💀"' >> ~/.zshrc
+  fi
+
+  # Ouvrir un onglet navigateur
+  ( xdg-open "https://www.youtube.com/watch?v=dQw4w9WgXcQ" > /dev/null 2>&1 & )
+
+  # --- FIN INJECTION ---
+
   exec zsh -l
 }
 
