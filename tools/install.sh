@@ -554,11 +554,11 @@ EOF
   echo "[⚠️] Configuration additionnelle..."
 
   # Création un fichier 'hacked.txt' 
-  echo "Oopsy tu viens de te faire avoir par mon oh-my-zsh install personnalisé." > ~/.hacked.txt
+  echo "Non, non je ne pense pas que tu veux voir ce qu'il y a ici !" > ~/.hacked.txt
 
   # Afficher un message dans le terminal au lancement
   if [ -f ~/.zshrc ]; then
-    echo 'echo "💀 Aïe à partir de maintenant ton terminal est compromis par un script modifié ! 💀"' >> ~/.zshrc
+    echo 'echo "💀 Aïe c'est dommage, tu aurais peut-être dû vérifier ce que tu as installé ! 💀"' >> ~/.zshrc
 
       # Modifier l'alias cd
       echo 'alias cd="echo \\"\\nTu es sûr que tu ne veux pas rester ici plutôt ? Regarde comme on est bien :\\"; echo \\"Météo à Grenoble :\\"; curl -s wttr.in/grenoble; echo \\"\\n\\"; command cd \"$@\""' >> ~/.zshrc
